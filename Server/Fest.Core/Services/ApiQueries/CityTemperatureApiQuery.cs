@@ -1,10 +1,10 @@
 ﻿namespace Fest.Core.Services.ApiQueries
 {
-    public class TimezoneQuery : ICityInfoQuery
+    public class CityTemperatureApiQuery : ICityInfoApiQuery
     {
         public string GetDataForCity(string zipCode)
         {
-            throw new System.NotImplementedException();
+            return "10";
         }
     }
 }

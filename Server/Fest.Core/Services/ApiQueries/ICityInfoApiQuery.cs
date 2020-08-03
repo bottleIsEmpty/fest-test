@@ -1,6 +1,6 @@
 ﻿namespace Fest.Core.Services.ApiQueries
 {
-    public interface ICityInfoQuery
+    public interface ICityInfoApiQuery
     {
         string GetDataForCity(string zipCode);
     }
