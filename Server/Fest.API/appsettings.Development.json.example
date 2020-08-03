@@ -8,10 +8,10 @@
   },
   "OpenWeather": {
     "URL": "https://api.openweathermap.org/data/2.5/weather?zip={0},{1}&appid={2}&units=metric",
-    "APIKey": "062219075cb40d9c972313d71585c3a3"
+    "APIKey": "<Your OpenWeather API Key>"
   },
   "GoogleTimeZone": {
     "URL": "https://maps.googleapis.com/maps/api/timezone/json?location={0},{1}&timestamp=0&key={2}",
-    "APIKey": "AIzaSyAVs-l3B_KGXZCVwvfGYYXVipPpJvIwNA8"
+    "APIKey": "<Your Google Cloud API Key>"
   }
 }

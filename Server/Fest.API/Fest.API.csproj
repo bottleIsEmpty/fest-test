@@ -14,7 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Content Update="appsettings.Development.json.example.json">
+      <Content Update="appsettings.Development.json.example">
         <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
