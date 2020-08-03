@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fest.API", "Fest.API\Fest.API.csproj", "{8223DC27-60A0-43B5-AA59-254631FC6FEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fest.Core", "Fest.Core\Fest.Core.csproj", "{61024759-DFC4-4448-A830-17B62D0CCA95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8223DC27-60A0-43B5-AA59-254631FC6FEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8223DC27-60A0-43B5-AA59-254631FC6FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8223DC27-60A0-43B5-AA59-254631FC6FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8223DC27-60A0-43B5-AA59-254631FC6FEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61024759-DFC4-4448-A830-17B62D0CCA95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61024759-DFC4-4448-A830-17B62D0CCA95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61024759-DFC4-4448-A830-17B62D0CCA95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61024759-DFC4-4448-A830-17B62D0CCA95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
