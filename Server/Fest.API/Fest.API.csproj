@@ -8,5 +8,9 @@
       <ProjectReference Include="..\Fest.Core\Fest.Core.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+    </ItemGroup>
+
 
 </Project>

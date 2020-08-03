@@ -1,4 +1,5 @@
-﻿using Fest.Core.Services.ApiQueries;
+﻿using Fest.Core.DTOs;
+using Fest.Core.Services.ApiQueries;
 
 namespace Fest.Core.Services.CityInfo
 {
@@ -13,9 +14,10 @@ namespace Fest.Core.Services.CityInfo
             _timezoneApiQuery = timezoneApiQuery;
         }
 
-        public string GetCityInfo(string zipCode)
+        public string GetCityInfo(CityInfoRequest cityInfoRequest)
         {
-            return _cityTemperatureApiQuery.GetDataForCity(zipCode) + _timezoneApiQuery.GetDataForCity(zipCode);
+            return _cityTemperatureApiQuery.GetDataForCity(cityInfoRequest.ZipCode) + " " +
+                   _timezoneApiQuery.GetDataForCity(cityInfoRequest.ZipCode);
         }
     }
 }

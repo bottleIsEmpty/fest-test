@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Fest.Core.DTOs;
 using Fest.Core.Services.CityInfo;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
 namespace Fest.API.Controllers
 {
@@ -19,10 +15,10 @@ namespace Fest.API.Controllers
             _cityInfoService = cityInfoService;
         }
 
-        [HttpGet("{zipCode}")]
-        public string Get(string zipCode)
+        [HttpGet]
+        public string Get([FromQuery] CityInfoRequest cityInfoRequest)
         {
-            return _cityInfoService.GetCityInfo(zipCode);
+            return _cityInfoService.GetCityInfo(cityInfoRequest);
         }
     }
 }

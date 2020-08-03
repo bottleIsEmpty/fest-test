@@ -4,7 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Fest.Core.Configuration
 {
-    public static class CoreConfiguration
+    public static class CoreServicesConfiguration
     {
         public static void AddCoreServices(this IServiceCollection services)
         {
