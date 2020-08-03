@@ -1,7 +1,11 @@
-﻿namespace Fest.Core.Services.ApiQueries
+﻿using System.Threading.Tasks;
+using Fest.Core.Requests;
+using Fest.Core.Responses;
+
+namespace Fest.Core.Services.ApiQueries
 {
-    public interface ICityInfoApiQuery
+    public interface ICityTemperatureApiQuery
     {
-        string GetDataForCity(string zipCode);
+        Task<TemperatureInfoResponse> GetDataForCity(CityInfoRequest cityInfoRequest);
     }
 }

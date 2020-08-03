@@ -1,4 +1,5 @@
-﻿using Fest.Core.DTOs;
+﻿using System.Threading.Tasks;
+using Fest.Core.Requests;
 using Fest.Core.Services.CityInfo;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,17 +9,17 @@ namespace Fest.API.Controllers
     [Route("api/[controller]")]
     public class CityInfoController : ControllerBase
     {
-        private readonly CityInfoService _cityInfoService;
+        private readonly ICityInfoService _cityInfoService;
 
-        public CityInfoController(CityInfoService cityInfoService)
+        public CityInfoController(ICityInfoService cityInfoService)
         {
             _cityInfoService = cityInfoService;
         }
 
         [HttpGet]
-        public string Get([FromQuery] CityInfoRequest cityInfoRequest)
+        public async Task<string> Get([FromQuery] CityInfoRequest cityInfoRequest)
         {
-            return _cityInfoService.GetCityInfo(cityInfoRequest);
+            return await _cityInfoService.GetCityInfo(cityInfoRequest);
         }
     }
 }

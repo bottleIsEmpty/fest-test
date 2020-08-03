@@ -8,9 +8,9 @@ namespace Fest.Core.Configuration
     {
         public static void AddCoreServices(this IServiceCollection services)
         {
-            services.AddScoped(typeof(CityTemperatureApiQuery));
-            services.AddScoped(typeof(TimezoneApiQuery));
-            services.AddScoped(typeof(CityInfoService));
+            services.AddScoped<ICityTemperatureApiQuery, CityTemperatureApiQuery>();
+            services.AddScoped<ITimezoneApiQuery, TimezoneApiQuery>();
+            services.AddScoped<ICityInfoService, CityInfoService>();
         }
     }
 }
