@@ -21,7 +21,7 @@ namespace Fest.Core.Services.CityInfo
             var timezoneApiResponse = await _timezoneApiQuery.GetDataForCity(temperatureApiResponse);
 
             return
-                $"At the location {temperatureApiResponse.CityName}, the temperature is {temperatureApiResponse.Temperature}, and the timezone is {timezoneApiResponse.Name}";
+                $"At the location {temperatureApiResponse.CityName}, the temperature is {temperatureApiResponse.Temperature} degrees by Celsius, and the timezone is \"{timezoneApiResponse.Name}\"";
         }
     }
 }

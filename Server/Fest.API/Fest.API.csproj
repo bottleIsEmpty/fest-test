@@ -6,21 +6,10 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Fest.Core\Fest.Core.csproj" />
-      <ProjectReference Include="..\Fest.Domain\Fest.Domain.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
     </ItemGroup>
-
-    <ItemGroup>
-      <Content Update="appsettings.Development.json.example">
-        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      </Content>
-      <Content Include="appsettings.Development.json" />
-    </ItemGroup>
-
-
+    
 </Project>

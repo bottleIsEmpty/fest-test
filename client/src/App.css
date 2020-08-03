@@ -1,6 +1,13 @@
 .App {
   text-align: center;
-  margin-top: 50px;
+  width: 50%;
+  margin: 50px auto;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .form-control {
@@ -14,4 +21,12 @@
 .form-control input, select, button {
   height: 30px;
   border-radius: 5px;
+}
+
+.result {
+  margin-top: 15px;
+  background-color: aquamarine;
+  border: 3px solid deepskyblue;
+  padding: 10px;
+  border-radius: 10px;
 }

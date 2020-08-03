@@ -2,8 +2,8 @@ import React from 'react'
 
 export const ResultInfo = (props) => {
     return (
-        <>
-            Hey
-        </>
+        <div className="result">
+            {props.info}
+        </div>
     )
 }
